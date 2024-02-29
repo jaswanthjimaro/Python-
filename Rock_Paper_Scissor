@@ -1,0 +1,58 @@
+print("Welcome to Rock , Paper ,Scissor Game ")
+
+rock=("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+
+# Paper
+papper=("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+
+# Scissors
+Scissors=("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+
+import random 
+lis=[rock,papper,Scissors]
+rand_num=random.randint(0, 2)
+user=int(input("Enter the number 0 for rock 1 for paper 2 for sissor "))
+if user>2 :
+    print("Invalid number")
+else:
+    if rand_num==user:
+        print(f"user choose {lis[user]}" )
+        print(f"sys choose {lis[rand_num]}" )
+        print("the game is draw")
+    elif user==2 and rand_num==0:
+        print(f"user choose {lis[user]}" )
+        print(f"sys choose {lis[rand_num]}" )
+        print("you lose")
+    elif user==0 and rand_num==2:
+        print(f"user choose {lis[user]}" )
+        print(f"sys choose {lis[rand_num]}" )
+        print("you win")
+    elif user>rand_num:
+        print(f"user choose {lis[user]}" )
+        print(f"sys choose {lis[rand_num]}" )
+        print("you win")
+    elif rand_num>user:
+        print(f"user choose {lis[user]}" )
+        print(f"sys choose {lis[rand_num]}" )
+        print("you lose")
