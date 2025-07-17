@@ -152,7 +152,7 @@ def main():
     
     # Play background music (replace with your actual song file)
     try:
-        autoplay_audio("D:/Downloads/கண்  திறக்கும் போது என் வெளிச்சம் நீ (1).mp3")
+        autoplay_audio("assets/கண்  திறக்கும் போது என் வெளிச்சம் நீ (1).mp3")
     except:
         st.warning("Couldn't load the birthday song")
     
@@ -160,7 +160,7 @@ def main():
     st.markdown("<h2 style='text-align: center; color: #ff85a2;'>Our Beautiful Memories</h2>", unsafe_allow_html=True)
     
     # Replace these with your actual images
-    image_paths = ["C:/Users/USER/OneDrive/Pictures/IMG-20230115-WA0040.jpg", "C:/Users/USER/OneDrive/Pictures/IMG-20221231-WA0123.jpg", "C:/Users/USER/OneDrive/Pictures/IMG-20211212-WA0001.jpg", "C:/Users/USER/OneDrive/Pictures/IMG-20221224-WA0035.jpg", "C:/Users/USER/OneDrive/Pictures/IMG20220811133415.jpg", "C:/Users/USER/OneDrive/Pictures/IMG-20221229-WA0007.jpg"]
+    image_paths = ["assets/IMG-20230115-WA0040.jpg", "assets/IMG-20221231-WA0123.jpg", "assets/IMG-20211212-WA0001.jpg", "assets/IMG-20221224-WA0035.jpg", "assets/IMG20220811133415.jpg", "assets/IMG-20221229-WA0007.jpg"]
     # Romantic quotes for each image
     romantic_quotes = [
         "Your love is the melody of my life's song",
